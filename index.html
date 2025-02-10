@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Avion</title>
+  </head>
+  <body>
+    <!-- Хедер -->
+
+    <header>
+      <div class="container__header">
+        <div class="header__top">
+          <div class="header__search">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="16"
+                height="16"
+                fill="white"
+                style="mix-blend-mode: multiply"
+              />
+              <path
+                d="M14.5001 13.7929L10.7241 10.0169C11.6314 8.92758 12.0839 7.53038 11.9873 6.11596C11.8908 4.70153 11.2526 3.37879 10.2057 2.42288C9.15867 1.46698 7.78347 0.951515 6.36612 0.983723C4.94877 1.01593 3.5984 1.59333 2.59593 2.59581C1.59345 3.59828 1.01605 4.94865 0.983845 6.366C0.951637 7.78335 1.4671 9.15855 2.423 10.2055C3.37891 11.2525 4.70165 11.8907 6.11608 11.9872C7.5305 12.0838 8.9277 11.6313 10.017 10.7239L13.7931 14.5L14.5001 13.7929ZM2.00012 6.5C2.00012 5.60998 2.26404 4.73995 2.75851 3.99993C3.25297 3.25991 3.95578 2.68313 4.77804 2.34254C5.60031 2.00194 6.50511 1.91283 7.37802 2.08646C8.25094 2.2601 9.05276 2.68868 9.6821 3.31802C10.3114 3.94735 10.74 4.74918 10.9137 5.62209C11.0873 6.495 10.9982 7.3998 10.6576 8.22207C10.317 9.04434 9.7402 9.74714 9.00018 10.2416C8.26016 10.7361 7.39013 11 6.50012 11C5.30705 10.9987 4.16323 10.5241 3.3196 9.68052C2.47597 8.83689 2.00144 7.69306 2.00012 6.5Z"
+                fill="#2A254B"
+              />
+            </svg>
+          </div>
+          <div class="header__logo">
+            <a href="#">
+              <svg
+                width="64"
+                height="18"
+                viewBox="0 0 64 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.992 17L4.152 12.272H12.984L15.144 17H17.064L9.768 0.92H7.392L0.12 17H1.992ZM7.608 4.64L8.472 2.552H8.616L9.504 4.64L12.288 10.736H4.848L7.608 4.64ZM25.1717 17L30.8357 5.144H28.9877L24.2117 15.32H24.0677L19.2677 5.144H17.4197L23.0837 17H25.1717ZM34.2221 3.632V0.92H32.5181V3.632H34.2221ZM34.2221 17V5.144H32.5181V17H34.2221ZM42.8964 17.24C46.7844 17.24 49.3524 14.672 49.3524 11.072C49.3524 7.472 46.7844 4.904 42.8964 4.904C39.0324 4.904 36.4644 7.472 36.4644 11.072C36.4644 14.672 39.0324 17.24 42.8964 17.24ZM42.8964 15.704C39.6324 15.704 38.1444 13.952 38.1444 11.072C38.1444 8.216 39.6324 6.44 42.8964 6.44C46.1604 6.44 47.6724 8.216 47.6724 11.072C47.6724 13.952 46.1604 15.704 42.8964 15.704ZM53.3237 17V11.264C53.3237 8.216 54.8357 6.464 57.7157 6.464C60.4277 6.464 61.6037 7.88 61.6037 10.328V17H63.3077V10.088C63.3077 7.28 61.6517 4.904 58.3157 4.904C55.3637 4.904 53.6837 6.848 53.2757 8.864H53.1557V5.144H51.6197V17H53.3237Z"
+                  fill="#22202E"
+                /></svg
+            ></a>
+          </div>
+          <div class="header__auth">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="16"
+                height="16"
+                fill="white"
+                style="mix-blend-mode: multiply"
+              />
+              <path
+                d="M8 4C7.50555 4 7.0222 4.14662 6.61108 4.42133C6.19995 4.69603 5.87952 5.08648 5.6903 5.54329C5.50108 6.00011 5.45158 6.50277 5.54804 6.98773C5.6445 7.47268 5.88261 7.91814 6.23224 8.26777C6.58187 8.6174 7.02733 8.8555 7.51228 8.95196C7.99723 9.04843 8.4999 8.99892 8.95671 8.8097C9.41353 8.62048 9.80397 8.30005 10.0787 7.88893C10.3534 7.4778 10.5 6.99445 10.5 6.5C10.5 5.83696 10.2366 5.20107 9.76777 4.73223C9.29893 4.26339 8.66304 4 8 4ZM8 8C7.70333 8 7.41332 7.91203 7.16665 7.7472C6.91997 7.58238 6.72772 7.34811 6.61418 7.07403C6.50065 6.79994 6.47095 6.49834 6.52882 6.20736C6.5867 5.91639 6.72956 5.64912 6.93934 5.43934C7.14912 5.22956 7.4164 5.0867 7.70737 5.02882C7.99834 4.97094 8.29994 5.00065 8.57403 5.11418C8.84812 5.22771 9.08239 5.41997 9.24721 5.66664C9.41203 5.91332 9.5 6.20333 9.5 6.5C9.49955 6.89769 9.34137 7.27896 9.06017 7.56016C8.77896 7.84137 8.39769 7.99955 8 8Z"
+                fill="#2A254B"
+              />
+              <path
+                d="M8 1C6.61553 1 5.26216 1.41054 4.11101 2.17971C2.95987 2.94888 2.06266 4.04213 1.53285 5.32122C1.00303 6.6003 0.86441 8.00776 1.13451 9.36563C1.4046 10.7235 2.07129 11.9708 3.05026 12.9497C4.02922 13.9287 5.2765 14.5954 6.63437 14.8655C7.99224 15.1356 9.3997 14.997 10.6788 14.4672C11.9579 13.9373 13.0511 13.0401 13.8203 11.889C14.5895 10.7378 15 9.38447 15 8C14.9979 6.14413 14.2597 4.36486 12.9474 3.05256C11.6351 1.74026 9.85588 1.00209 8 1ZM5 13.1882V12.5C5.00044 12.1023 5.15862 11.721 5.43983 11.4398C5.72104 11.1586 6.10231 11.0004 6.5 11H9.5C9.89769 11.0004 10.279 11.1586 10.5602 11.4398C10.8414 11.721 10.9996 12.1023 11 12.5V13.1882C10.0896 13.7199 9.05426 14 8 14C6.94574 14 5.91042 13.7199 5 13.1882ZM11.9963 12.4629C11.9863 11.807 11.7191 11.1813 11.2521 10.7206C10.7852 10.2599 10.156 10.0011 9.5 10H6.5C5.84405 10.0011 5.2148 10.2599 4.74786 10.7206C4.28093 11.1813 4.01369 11.807 4.00375 12.4629C3.09703 11.6533 2.45762 10.5873 2.17017 9.40623C1.88272 8.22513 1.9608 6.98457 2.39407 5.84883C2.82734 4.71309 3.59536 3.73573 4.59644 3.04618C5.59751 2.35663 6.78442 1.98741 8 1.98741C9.21558 1.98741 10.4025 2.35663 11.4036 3.04618C12.4046 3.73573 13.1727 4.71309 13.6059 5.84883C14.0392 6.98457 14.1173 8.22513 13.8298 9.40623C13.5424 10.5873 12.903 11.6533 11.9963 12.4629Z"
+                fill="#2A254B"
+              />
+            </svg>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="16"
+                height="16"
+                fill="white"
+                style="mix-blend-mode: multiply"
+              />
+              <path
+                d="M5 15C5.55228 15 6 14.5523 6 14C6 13.4477 5.55228 13 5 13C4.44772 13 4 13.4477 4 14C4 14.5523 4.44772 15 5 15Z"
+                fill="#2A254B"
+              />
+              <path
+                d="M12 15C12.5523 15 13 14.5523 13 14C13 13.4477 12.5523 13 12 13C11.4477 13 11 13.4477 11 14C11 14.5523 11.4477 15 12 15Z"
+                fill="#2A254B"
+              />
+              <path
+                d="M14 3.50001H2.91L2.5 1.40001C2.47662 1.28537 2.41379 1.18256 2.32243 1.10947C2.23107 1.03639 2.11697 0.997651 2 1.00001H0V2.00001H1.59L3.5 11.6C3.52338 11.7146 3.58621 11.8175 3.67757 11.8905C3.76893 11.9636 3.88303 12.0024 4 12H13V11H4.41L4 9.00001H13C13.1156 9.00284 13.2286 8.96552 13.3197 8.89441C13.4109 8.8233 13.4746 8.7228 13.5 8.61001L14.5 4.11001C14.5168 4.03582 14.5164 3.95879 14.4989 3.88478C14.4814 3.81076 14.4472 3.74172 14.399 3.6829C14.3508 3.62407 14.2898 3.57703 14.2206 3.54534C14.1515 3.51364 14.076 3.49814 14 3.50001ZM12.6 8.00001H3.81L3.11 4.50001H13.375L12.6 8.00001Z"
+                fill="#2A254B"
+              />
+            </svg>
+          </div>
+        </div>
+        <nav class="header__bottom">
+          <div class="header__burger-wrapper">
+            <div class="header__bottom-logo">
+              <a href="#">
+                <svg
+                  width="64"
+                  height="18"
+                  viewBox="0 0 64 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.992 17L4.152 12.272H12.984L15.144 17H17.064L9.768 0.92H7.392L0.12 17H1.992ZM7.608 4.64L8.472 2.552H8.616L9.504 4.64L12.288 10.736H4.848L7.608 4.64ZM25.1717 17L30.8357 5.144H28.9877L24.2117 15.32H24.0677L19.2677 5.144H17.4197L23.0837 17H25.1717ZM34.2221 3.632V0.92H32.5181V3.632H34.2221ZM34.2221 17V5.144H32.5181V17H34.2221ZM42.8964 17.24C46.7844 17.24 49.3524 14.672 49.3524 11.072C49.3524 7.472 46.7844 4.904 42.8964 4.904C39.0324 4.904 36.4644 7.472 36.4644 11.072C36.4644 14.672 39.0324 17.24 42.8964 17.24ZM42.8964 15.704C39.6324 15.704 38.1444 13.952 38.1444 11.072C38.1444 8.216 39.6324 6.44 42.8964 6.44C46.1604 6.44 47.6724 8.216 47.6724 11.072C47.6724 13.952 46.1604 15.704 42.8964 15.704ZM53.3237 17V11.264C53.3237 8.216 54.8357 6.464 57.7157 6.464C60.4277 6.464 61.6037 7.88 61.6037 10.328V17H63.3077V10.088C63.3077 7.28 61.6517 4.904 58.3157 4.904C55.3637 4.904 53.6837 6.848 53.2757 8.864H53.1557V5.144H51.6197V17H53.3237Z"
+                    fill="#22202E"
+                  /></svg
+              ></a>
+            </div>
+            <div class="header__group">
+              <div class="header__bottom-search">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="16"
+                    height="16"
+                    fill="white"
+                    style="mix-blend-mode: multiply"
+                  />
+                  <path
+                    d="M14.5001 13.7929L10.7241 10.0169C11.6314 8.92758 12.0839 7.53038 11.9873 6.11596C11.8908 4.70153 11.2526 3.37879 10.2057 2.42288C9.15867 1.46698 7.78347 0.951515 6.36612 0.983723C4.94877 1.01593 3.5984 1.59333 2.59593 2.59581C1.59345 3.59828 1.01605 4.94865 0.983845 6.366C0.951637 7.78335 1.4671 9.15855 2.423 10.2055C3.37891 11.2525 4.70165 11.8907 6.11608 11.9872C7.5305 12.0838 8.9277 11.6313 10.017 10.7239L13.7931 14.5L14.5001 13.7929ZM2.00012 6.5C2.00012 5.60998 2.26404 4.73995 2.75851 3.99993C3.25297 3.25991 3.95578 2.68313 4.77804 2.34254C5.60031 2.00194 6.50511 1.91283 7.37802 2.08646C8.25094 2.2601 9.05276 2.68868 9.6821 3.31802C10.3114 3.94735 10.74 4.74918 10.9137 5.62209C11.0873 6.495 10.9982 7.3998 10.6576 8.22207C10.317 9.04434 9.7402 9.74714 9.00018 10.2416C8.26016 10.7361 7.39013 11 6.50012 11C5.30705 10.9987 4.16323 10.5241 3.3196 9.68052C2.47597 8.83689 2.00144 7.69306 2.00012 6.5Z"
+                    fill="#2A254B"
+                  />
+                </svg>
+              </div>
+              <div class="header__burger">
+                <div class="header__line"></div>
+                <div class="header__line"></div>
+                <div class="header__line"></div>
+                <div class="header__line"></div>
+              </div>
+            </div>
+          </div>
+          <ul class="header__nav-bar">
+            <li class="header__nav-item"><a href="#">Plant pots</a></li>
+            <li class="header__nav-item"><a href="#">Ceramics</a></li>
+            <li class="header__nav-item"><a href="#">Tables</a></li>
+            <li class="header__nav-item"><a href="#">Chairs</a></li>
+            <li class="header__nav-item"><a href="#">Crockery</a></li>
+            <li class="header__nav-item"><a href="#">Tableware</a></li>
+            <li class="header__nav-item"><a href="#">Cutlery</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main -->
+
+    <main>
+      <!-- Баннер -->
+
+      <section>
+        <div class="container container--padding-zero">
+          <div class="banner">
+            <div class="banner__info">
+              <h1 class="banner__title">
+                The furniture brand for the <br />
+                future, with timeless designs
+              </h>
+              <div class="banner__link banner__link--none">
+                <a href="#" class="btn btn--grey">View collection</a>
+              </div>
+              <div class="banner__description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                aliquam magni asperiores alias illo? Magnam nisi, nobis quos
+                nesciunt non voluptates ex vitae voluptatem qui fugiat doloribus
+                et aspernatur quia.
+              </div>
+              <div class="banner__link banner__link--desctop-none">
+                <a href="#" class="btn btn--grey">View collection</a>
+              </div>
+            </div>
+            <div class="banner__image">
+              <img src="./image/chair.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Рабочий процесс -->
+
+      <section>
+        <div class="container">
+          <div class="workflow">
+            <h3 class="workflow__title main-title">
+              What makes our brand different
+            </h3>
+            <div class="workflow__group">
+              <div class="workflow__item">
+                <div class="workflow__icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      style="mix-blend-mode: multiply"
+                    />
+                    <path d="M12 12H3V13.5H12V12Z" fill="#2A254B" />
+                    <path d="M9 8.25H1.5V9.75H9V8.25Z" fill="#2A254B" />
+                    <path
+                      d="M22.4392 12.4548L20.1892 7.2048C20.1315 7.06979 20.0355 6.95469 19.9129 6.87383C19.7904 6.79297 19.6468 6.74991 19.5 6.75H17.25V5.25C17.25 5.05109 17.171 4.86032 17.0303 4.71967C16.8897 4.57902 16.6989 4.5 16.5 4.5H4.5V6H15.75V15.4172C15.4083 15.6156 15.1092 15.8797 14.8701 16.1943C14.6309 16.5089 14.4564 16.8677 14.3566 17.25H9.64342C9.46088 16.543 9.02675 15.9269 8.42242 15.517C7.81809 15.1072 7.08504 14.9319 6.36067 15.0239C5.63631 15.1159 4.97038 15.4689 4.48768 16.0168C4.00499 16.5647 3.73869 17.2698 3.73869 18C3.73869 18.7302 4.00499 19.4353 4.48768 19.9832C4.97038 20.5311 5.63631 20.8841 6.36067 20.9761C7.08504 21.0681 7.81809 20.8928 8.42242 20.483C9.02675 20.0731 9.46088 19.457 9.64342 18.75H14.3566C14.5201 19.3933 14.8934 19.9638 15.4174 20.3712C15.9414 20.7787 16.5862 20.9999 17.25 20.9999C17.9138 20.9999 18.5586 20.7787 19.0826 20.3712C19.6066 19.9638 19.9799 19.3933 20.1434 18.75H21.75C21.9489 18.75 22.1397 18.671 22.2803 18.5303C22.421 18.3897 22.5 18.1989 22.5 18V12.75C22.5 12.6485 22.4793 12.548 22.4392 12.4548ZM6.75 19.5C6.45333 19.5 6.16332 19.412 5.91665 19.2472C5.66997 19.0824 5.47771 18.8481 5.36418 18.574C5.25065 18.2999 5.22094 17.9983 5.27882 17.7074C5.3367 17.4164 5.47956 17.1491 5.68934 16.9393C5.89912 16.7296 6.16639 16.5867 6.45736 16.5288C6.74834 16.4709 7.04994 16.5006 7.32403 16.6142C7.59811 16.7277 7.83238 16.92 7.9972 17.1666C8.16203 17.4133 8.25 17.7033 8.25 18C8.24954 18.3977 8.09136 18.779 7.81016 19.0602C7.52895 19.3414 7.14768 19.4995 6.75 19.5ZM17.25 8.25H19.0056L20.6129 12H17.25V8.25ZM17.25 19.5C16.9533 19.5 16.6633 19.412 16.4166 19.2472C16.17 19.0824 15.9777 18.8481 15.8642 18.574C15.7506 18.2999 15.7209 17.9983 15.7788 17.7074C15.8367 17.4164 15.9796 17.1491 16.1893 16.9393C16.3991 16.7296 16.6664 16.5867 16.9574 16.5288C17.2483 16.4709 17.5499 16.5006 17.824 16.6142C18.0981 16.7277 18.3324 16.92 18.4972 17.1666C18.662 17.4133 18.75 17.7033 18.75 18C18.7495 18.3977 18.5914 18.779 18.3102 19.0602C18.0289 19.3414 17.6477 19.4995 17.25 19.5ZM21 17.25H20.1434C19.9782 16.6076 19.6045 16.0382 19.0808 15.631C18.5572 15.2239 17.9133 15.0019 17.25 15V13.5H21V17.25Z"
+                      fill="#2A254B"
+                    />
+                  </svg>
+                </div>
+                <div class="workflow__subtitle">Next day as standard</div>
+                <div class="workflow__text">
+                  Order before 3pm and get your order the next day as standard
+                </div>
+              </div>
+              <div class="workflow__item">
+                <div class="workflow__icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      style="mix-blend-mode: multiply"
+                    />
+                    <path
+                      d="M10.5 16.0605L6.75 12.3097L7.80976 11.25L10.5 13.9395L16.1888 8.25L17.25 9.31125L10.5 16.0605Z"
+                      fill="#2A254B"
+                    />
+                    <path
+                      d="M12 1.5C9.9233 1.5 7.89323 2.11581 6.16652 3.26957C4.4398 4.42332 3.09399 6.0632 2.29927 7.98182C1.50455 9.90045 1.29661 12.0116 1.70176 14.0484C2.1069 16.0852 3.10693 17.9562 4.57538 19.4246C6.04383 20.8931 7.91476 21.8931 9.95156 22.2982C11.9884 22.7034 14.0996 22.4955 16.0182 21.7007C17.9368 20.906 19.5767 19.5602 20.7304 17.8335C21.8842 16.1068 22.5 14.0767 22.5 12C22.5 9.21523 21.3938 6.54451 19.4246 4.57538C17.4555 2.60625 14.7848 1.5 12 1.5ZM12 21C10.22 21 8.47992 20.4722 6.99987 19.4832C5.51983 18.4943 4.36628 17.0887 3.68509 15.4442C3.0039 13.7996 2.82567 11.99 3.17294 10.2442C3.5202 8.49836 4.37737 6.89471 5.63604 5.63604C6.89472 4.37737 8.49836 3.5202 10.2442 3.17293C11.99 2.82567 13.7996 3.0039 15.4442 3.68508C17.0887 4.36627 18.4943 5.51983 19.4832 6.99987C20.4722 8.47991 21 10.22 21 12C21 14.3869 20.0518 16.6761 18.364 18.364C16.6761 20.0518 14.387 21 12 21Z"
+                      fill="#2A254B"
+                    />
+                  </svg>
+                </div>
+
+                <div class="workflow__subtitle">Next day as standard</div>
+                <div class="workflow__text">
+                  Order before 3pm and get your order the next day as standard
+                </div>
+              </div>
+              <div class="workflow__item">
+                <div class="workflow__icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      style="mix-blend-mode: multiply"
+                    />
+                    <path
+                      d="M21 4.5H3C2.60218 4.5 2.22064 4.65804 1.93934 4.93934C1.65804 5.22064 1.5 5.60218 1.5 6V18C1.5 18.3978 1.65804 18.7794 1.93934 19.0607C2.22064 19.342 2.60218 19.5 3 19.5H21C21.3978 19.5 21.7794 19.342 22.0607 19.0607C22.342 18.7794 22.5 18.3978 22.5 18V6C22.5 5.60218 22.342 5.22064 22.0607 4.93934C21.7794 4.65804 21.3978 4.5 21 4.5ZM21 6V8.25H3V6H21ZM3 18V9.75H21V18H3Z"
+                      fill="#2A254B"
+                    />
+                    <path d="M12 15H4.5V16.5H12V15Z" fill="#2A254B" />
+                  </svg>
+                </div>
+
+                <div class="workflow__subtitle">Next day as standard</div>
+                <div class="workflow__text">
+                  Order before 3pm and get your order the next day as standard
+                </div>
+              </div>
+              <div class="workflow__item">
+                <div class="workflow__icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      width="24"
+                      height="24"
+                      fill="white"
+                      style="mix-blend-mode: multiply"
+                    />
+                    <path
+                      d="M18.75 1.5C17.0878 1.50275 15.4651 2.00708 14.0942 2.94704C12.7232 3.887 11.6679 5.21881 11.0662 6.7683C10.5841 6.06903 9.93949 5.49727 9.18767 5.10216C8.43584 4.70705 7.59932 4.50041 6.75 4.5H4.5V6.75C4.50155 8.14191 5.05517 9.47637 6.0394 10.4606C7.02363 11.4448 8.35809 11.9985 9.75 12H10.5V18.787C8.7773 18.9554 7.16718 19.7191 5.94675 20.9465L7.00725 22.0071C7.63464 21.3798 8.39333 20.8995 9.22869 20.6006C10.064 20.3018 10.9553 20.192 11.8382 20.279C12.7211 20.3661 13.5737 20.6478 14.3347 21.104C15.0956 21.5602 15.7459 22.1794 16.2387 22.9172L17.4849 22.0826C16.8701 21.1638 16.0593 20.3926 15.111 19.8244C14.1626 19.2562 13.1002 18.9052 12 18.7965V12H12.75C14.9373 11.9975 17.0343 11.1275 18.5809 9.58089C20.1275 8.03425 20.9975 5.93727 21 3.75V1.5H18.75ZM9.75 10.5C8.75579 10.4989 7.80262 10.1034 7.0996 9.4004C6.39658 8.69738 6.00113 7.74421 6 6.75V6H6.75C7.74423 6.00107 8.69744 6.3965 9.40047 7.09953C10.1035 7.80256 10.4989 8.75577 10.5 9.75V10.5H9.75ZM19.5 3.75C19.498 5.5396 18.7862 7.25534 17.5208 8.52078C16.2553 9.78622 14.5396 10.498 12.75 10.5H12V9.75C12.002 7.9604 12.7138 6.24466 13.9792 4.97922C15.2447 3.71378 16.9604 3.00199 18.75 3H19.5V3.75Z"
+                      fill="#2A254B"
+                    />
+                  </svg>
+                </div>
+                <div class="workflow__subtitle">Next day as standard</div>
+                <div class="workflow__text">
+                  Order before 3pm and get your order the next day as standard
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Карточки -->
+
+      <section>
+        <div class="container">
+          <div class="cards cards--static">
+            <div class="cards__title main-title">New ceramics</div>
+            <div class="cards__group">
+              <div class="cards__element">
+                <img src="./image/chair.jpg" alt="chair" />
+                <div class="cards__name">The Dandy chair</div>
+                <div class="cards__text">£250</div>
+              </div>
+              <div class="cards__element">
+                <img src="./image/vase.jpg" alt="vase" />
+                <div class="cards__name">The Dandy chair</div>
+                <div class="cards__text">£250</div>
+              </div>
+              <div class="cards__element">
+                <img src="./image/vase2.jpg" alt="vase" />
+                <div class="cards__name">The Dandy chair</div>
+                <div class="cards__text">£250</div>
+              </div>
+              <div class="cards__element">
+                <img src="./image/chandelier.jpg" alt="chandelir" />
+                <div class="cards__name">The Dandy chair</div>
+                <div class="cards__text">£250</div>
+              </div>
+            </div>
+            <div class="cards__link">
+              <a href="#" class="btn btn--white">View collection</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Слайдер с карточками -->
+
+      <section>
+        <div class="container">
+          <div class="cards cards--slider">
+            <div class="cards__title main-title">New ceramics</div>
+            <div class="cards__group card__group--grid-three">
+              <div class="cards__element cards__elemet--medium">
+                <img src="./image/Large.jpg" alt="sofa" />
+                <div class="cards__name">The Dandy chair</div>
+                <div class="cards__text">£250</div>
+              </div>
+              <div class="cards__element">
+                <img src="./image/chair.jpg" alt="vase" />
+                <div class="cards__name">The Dandy chair</div>
+                <div class="cards__text">£250</div>
+              </div>
+              <div class="cards__element">
+                <img src="./image/bchair.jpg" alt="vase" />
+                <div class="cards__name">The Dandy chair</div>
+                <div class="cards__text">£250</div>
+              </div>
+            </div>
+            <div class="cards__link">
+              <a href="#" class="btn btn--white">View collection</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Форма обратной связи -->
+
+      <section class="feedback-wrapper">
+        <div class="container">
+          <div class="feedback">
+            <div class="feedback__text">
+              <div class="feedback__title">
+                Join the club and get the benefits
+              </div>
+              <div class="feedback__description">
+                Sign up for our newsletter and receive exclusive offers on new
+                ranges, sales, pop up stores and more
+              </div>
+            </div>
+
+            <form
+              action="#"
+              method="post"
+              enctype="application/x-www-form-urlencoded"
+              class="feedback__form"
+            >
+              <input
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+                class="feedback__input feedback__input--white"
+              />
+              <button class="btn btn--black" type="submit">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Описание  -->
+
+      <section>
+        <div class="about container">
+          <div class="about__left">
+            <div class="about__title">
+              From a studio in London to a global brand with over 400 outlets
+            </div>
+            <div class="about__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Asperiores libero beatae, totam sed reprehenderit voluptatem,
+              explicabo iste magni impedit facere aspernatur quo iure similique
+              laborum quos sunt doloribus soluta ipsa?
+            </div>
+            <div class="about__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Asperiores libero beatae, totam sed reprehenderit voluptatem,
+              explicabo iste magni impedit facere aspernatur quo iure similique
+              laborum quos sunt doloribus soluta ipsa?
+            </div>
+          </div>
+          <div class="about__right">
+            <img src="./image/sofa2.jpg" alt="sofa" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Футер -->
+
+    <footer>
+      <div class="container">
+        <div class="footer__top">
+          <nav class="footer__navigation">
+            <ul class="footer__nav-item">
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+            </ul>
+            <ul class="footer__nav-item">
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+            </ul>
+            <ul class="footer__nav-item">
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+            </ul>
+          </nav>
+          <form
+            action="#"
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+            class="feedback__form"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="your@email.com"
+              class="feedback__input feedback__input--dark"
+            />
+            <button class="btn btn--white" type="submit">Sign up</button>
+          </form>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__coopyright">Copyright 2022 Avion LTD</div>
+          <div class="footer__social-links"></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

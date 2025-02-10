@@ -1,0 +1,57 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 140%;
+  font-size: 1.6rem;
+}
+
+/* Ссылки */
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Список */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* focus */
+*:focus {
+  outline: none;
+}
+
+/* заголовки */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 140%;
+}
+
+/* инпут */
+input {
+  border: none;
+  outline: none;
+  padding: 0;
+}
