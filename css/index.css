@@ -155,6 +155,10 @@ header {
   cursor: pointer;
 }
 
+.header__auth svg:first-child {
+  margin-right: 2rem;
+}
+
 .header__bottom {
   padding: 2rem 0;
 }
@@ -614,7 +618,7 @@ header {
 }
 
 @media (max-width: 991px) {
-  .about {
+  .about .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -627,7 +631,7 @@ header {
 }
 
 @media (max-width: 540px) {
-  .about {
+  .about .container {
     padding-bottom: 2rem;
   }
 
