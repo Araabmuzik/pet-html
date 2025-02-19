@@ -1,0 +1,19 @@
+// Шрифты, переменные и ресет
+
+@import "fonts";
+@import "root";
+@import "reset";
+@import "global";
+// Кнопки и контейнеры
+
+@import "./components/_buttons";
+
+// основные блоки
+
+@import "./blocks/header";
+@import "./blocks/banner";
+@import "./blocks/workflow";
+@import "./blocks/cards";
+@import "./blocks/feedback";
+@import "./blocks/about";
+@import "./blocks/footer";

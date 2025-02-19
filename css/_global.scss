@@ -1,0 +1,39 @@
+body {
+  font-family: "Santoshi", sans-serif;
+}
+
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+  &__header {
+    max-width: 136.8rem;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1280px) {
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    &__header {
+      max-width: 100%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media (max-width: 540px) {
+    &--padding-zero {
+      padding: 0;
+    }
+  }
+}
+
+// какой то костыль
+.main-title {
+  font-family: "ClashDisplay", sans-serif;
+  font-size: 2.4rem;
+  color: var(--dark-primary);
+  font-weight: 400;
+  margin-bottom: 5.1rem;
+}
