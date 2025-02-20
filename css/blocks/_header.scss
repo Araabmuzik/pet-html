@@ -1,107 +1,105 @@
 header {
-    position: sticky;
-    top: 0;
-    background-color: var(--white);
-    z-index: 1000;
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  z-index: 1000;
 
-    .header__top {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2rem;
-        border-bottom: 0.1rem solid var(--font-color);
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 0.1rem solid var(--font-color);
 
-        @media (max-width: 540px) {
-            display: none;
-        }
-
-        .header__logo {
-            cursor: pointer;
-        }
-
-        .header__auth svg:first-child {
-            margin-right: 2rem;
-        }
+    @include mobile-l {
+      display: none;
     }
 
-    .header__bottom {
-        padding: 2rem 0;
-
-        .header__nav-bar {
-            display: flex;
-            justify-content: center;
-
-            @media (max-width: 540px) {
-                display: none;
-                flex-direction: row;
-                flex-wrap: wrap;
-                align-items: end;
-                justify-content: flex-end;
-                margin-top: 2.4rem;
-
-                &.active {
-                    display: flex;
-                }
-
-                li {
-                    margin: 0;
-
-                    a {
-                        padding: 0.5rem 2rem;
-                        transition: 0.2s ease-in-out;
-                        display: block;
-
-                        &:hover {
-                            background-color: var(--font-color);
-                            color: var(--white);
-                        }
-                    }
-                }
-            }
-
-            .header__nav-item {
-                margin-right: 4.4rem;
-
-                @media (max-width: 768px) {
-                    margin-right: 2rem;
-                }
-
-                a {
-                    color: var(--font-color);
-                }
-            }
-        }
+    .header__logo {
+      cursor: pointer;
     }
+
+    .header__auth svg:first-child {
+      margin-right: 2rem;
+    }
+  }
+
+  .header__bottom {
+    padding: 2rem 0;
+
+    .header__nav-bar {
+      display: flex;
+      justify-content: center;
+
+      @include mobile-l {
+        display: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: end;
+        justify-content: flex-end;
+        margin-top: 2.4rem;
+
+        &.active {
+          display: flex;
+        }
+
+        li {
+          margin: 0;
+
+          a {
+            padding: 0.5rem 2rem;
+            transition: 0.2s ease-in-out;
+            display: block;
+
+            &:hover {
+              background-color: var(--font-color);
+              color: var(--white);
+            }
+          }
+        }
+      }
+
+      .header__nav-item {
+        margin-right: 4.4rem;
+
+        @include tablet-s {
+          margin-right: 2rem;
+        }
+
+        a {
+          color: var(--font-color);
+        }
+      }
+    }
+  }
 }
 
 .header__burger-wrapper {
-    @media (max-width: 540px) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+  display: none;
+
+  @include mobile-l {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__bottom-search {
+    margin-right: 2.2rem;
+  }
+
+  .header__group {
+    display: flex;
+    align-items: center;
+
+    .header__line {
+      width: 1.2rem;
+      height: 0.1rem;
+      margin-bottom: 0.2rem;
+      background-color: var(--dark-primary);
     }
 
-    @media (min-width: 540px) {
-        display: none;
+    .header__burger {
+      cursor: pointer;
     }
-
-    .header__bottom-search {
-        margin-right: 2.2rem;
-    }
-
-    .header__group {
-        display: flex;
-        align-items: center;
-
-        .header__line {
-            width: 1.2rem;
-            height: 0.1rem;
-            margin-bottom: 0.2rem;
-            background-color: var(--dark-primary);
-        }
-
-        .header__burger {
-            cursor: pointer;
-        }
-    }
+  }
 }

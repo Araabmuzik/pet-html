@@ -1,90 +1,90 @@
 .cards {
-    @media (max-width: 540px) {
-        padding: 2rem 0;
+  @include mobile-l {
+    padding: 2rem 0;
+  }
+  padding: 8rem 0 5.6rem 0;
+
+  .cards__title {
+    margin-bottom: 3.3rem;
+    display: inline-flex;
+  }
+
+  .cards__group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+
+    @include mobile-l {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 2rem;
     }
-    padding: 8rem 0 5.6rem 0;
+  }
 
-    .cards__title {
-        margin-bottom: 3.3rem;
-        display: inline-flex;
-    }
+  .cards__element {
+    transition: 0.2s ease-in-out;
 
-    .cards__group {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 2rem;
-
-        @media (max-width: 540px) {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            row-gap: 2rem;
-        }
-    }
-
-    .cards__element {
-        transition: 0.2s ease-in-out;
-
-        &:hover {
-            transform: scale(1.04);
-        }
-
-        img {
-            max-width: 30.5rem;
-            object-fit: cover;
-            max-height: 37.5rem;
-
-            @media (max-width: 1280px) {
-                width: 100%;
-            }
-
-            @media (max-width: 540px) {
-                height: 80%;
-            }
-        }
+    &:hover {
+      transform: scale(1.04);
     }
 
-    .cards__name {
-        font-family: "ClashDisplay", sans-serif;
-        font-size: 2rem;
-        color: var(--dark-primary);
-        margin-top: 2.4rem;
+    img {
+      max-width: 30.5rem;
+      object-fit: cover;
+      max-height: 37.5rem;
 
-        @media (max-width: 768px) {
-            font-size: 1.6rem;
-        }
+      @include laptop-m {
+        width: 100%;
+      }
 
-        @media (max-width: 540px) {
-            font-size: 1.6rem;
-            margin-top: 1rem;
-        }
+      @include mobile-l {
+        height: 80%;
+      }
+    }
+  }
+
+  .cards__name {
+    font-family: "ClashDisplay", sans-serif;
+    font-size: 2rem;
+    color: var(--dark-primary);
+    margin-top: 2.4rem;
+
+    @include tablet-s {
+      font-size: 1.6rem;
     }
 
-    .cards__text {
-        font-family: "ClashDisplay", sans-serif;
-        font-size: 1.8rem;
-        color: var(--dark-primary);
-        margin-top: 0.8rem;
-
-        @media (max-width: 540px) {
-            font-size: 1.4rem;
-        }
+    @include mobile-l {
+      font-size: 1.6rem;
+      margin-top: 1rem;
     }
+  }
 
-    .cards__link {
-        margin-top: 3.5rem;
-        display: flex;
-        justify-content: center;
+  .cards__text {
+    font-family: "ClashDisplay", sans-serif;
+    font-size: 1.8rem;
+    color: var(--dark-primary);
+    margin-top: 0.8rem;
+
+    @include mobile-l {
+      font-size: 1.4rem;
     }
+  }
 
-    .cards__elemet--medium {
-        grid-column: span 2 / span 2;
+  .cards__link {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+  }
 
-        img {
-            max-width: 63rem;
+  .cards__elemet--medium {
+    grid-column: span 2 / span 2;
 
-            @media (max-width: 1280px) {
-                width: 100%;
-            }
-        }
+    img {
+      max-width: 63rem;
+
+      @include laptop-m {
+        width: 100%;
+      }
     }
+  }
 }

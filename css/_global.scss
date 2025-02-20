@@ -8,23 +8,11 @@ body {
   &__header {
     max-width: 136.8rem;
     margin: 0 auto;
-  }
 
-  @media (max-width: 1280px) {
-    max-width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-
-    &__header {
+    @include laptop-m {
       max-width: 100%;
       padding-left: 2rem;
       padding-right: 2rem;
-    }
-  }
-
-  @media (max-width: 540px) {
-    &--padding-zero {
-      padding: 0;
     }
   }
 }

@@ -2,7 +2,7 @@
   background-color: var(--light-grey);
   padding: 6.5rem;
 
-  @media (max-width: 540px) {
+  @include mobile-l {
     padding: 0;
   }
 
@@ -17,7 +17,7 @@
     align-items: center;
     padding: 6.8rem 1rem 5.4rem 1rem;
 
-    @media (max-width: 540px) {
+    @include mobile-l {
       padding: 3rem 2rem;
     }
 
@@ -32,7 +32,7 @@
         color: var(--dark-primary);
         text-align: center;
         margin-bottom: 1.6rem;
-        @media (max-width: 540px) {
+        @include mobile-l {
           font-size: 2.4rem;
         }
       }
@@ -45,7 +45,7 @@
         text-align: center;
         margin-bottom: 7.2rem;
 
-        @media (max-width: 540px) {
+        @include mobile-l {
           font-size: 1.5rem;
           margin-bottom: 3.6rem;
         }
@@ -56,7 +56,7 @@
 
 .feedback__form {
   display: flex;
-  @media (max-width: 540px) {
+  @include mobile-l {
     flex-direction: column;
     width: 100%;
   }
@@ -85,7 +85,7 @@
       }
     }
   }
-  @media (max-width: 1280px) {
+  @include laptop-m {
     .feedback__input--dark {
       width: 100%;
     }

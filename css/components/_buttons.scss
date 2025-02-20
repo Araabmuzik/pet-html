@@ -49,11 +49,11 @@
     }
   }
 
-  @media (max-width: 1280px) {
+  @include laptop-m {
     white-space: nowrap;
   }
 
-  @media (max-width: 540px) {
+  @include mobile-l {
     width: 100%;
     text-align: center;
   }

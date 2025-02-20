@@ -1,0 +1,81 @@
+// Возможные разрешения
+
+// 1920 desktop
+
+// 1440 laptop large
+// 1280 laptop medium + laptop-m
+// 1024 laptop small + laptop-s
+
+// 991 tablet medium +tablet-m
+// 768 tablet small + tablet-s
+
+// 540 mobile large + mobile-l
+// 480 mobile medium
+// 320 mobile small
+
+$desktop: 1920px;
+
+$laptop-l: 1440px;
+$laptop-m: 1280px;
+$laptop-s: 1024px;
+
+$tablet-m: 991px;
+$tablet-s: 768px;
+
+$mobile-l: 540px;
+$mobile-m: 480px;
+$mobile-s: 320px;
+
+@mixin desktop {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin laptop-l {
+  @media (max-width: $laptop-l) {
+    @content;
+  }
+}
+
+@mixin laptop-m {
+  @media (max-width: $laptop-m) {
+    @content;
+  }
+}
+
+@mixin laptop-s {
+  @media (max-width: $laptop-s) {
+    @content;
+  }
+}
+
+@mixin tablet-m {
+  @media (max-width: $tablet-m) {
+    @content;
+  }
+}
+
+@mixin tablet-s {
+  @media (max-width: $tablet-s) {
+    @content;
+  }
+}
+
+@mixin mobile-l {
+  @media (max-width: $mobile-l) {
+    @content;
+  }
+}
+
+@mixin mobile-m {
+  @media (max-width: $mobile-m) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media (max-width: $mobile-s) {
+    @content;
+  }
+}

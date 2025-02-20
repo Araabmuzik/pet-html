@@ -1,81 +1,77 @@
 .workflow {
-    padding: 6rem 0 8.6rem 0;
+  padding: 6rem 0 8.6rem 0;
 
-    .workflow__group {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+  .workflow__group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
-        @media (max-width: 1024px) {
-            column-gap: 2rem;
-        }
-
-        @media (max-width: 768px) {
-            column-gap: 2rem;
-        }
-
-        @media (max-width: 540px) {
-            padding: 2rem 0;
-        }
-
-        @media (max-width: 540px) {
-            grid-template-columns: 1fr;
-            column-gap: 1rem;
-            justify-items: center;
-            row-gap: 2rem;
-        }
-
-        .workflow {
-        }
-
-        .workflow__title {
-            text-align: center;
-
-            @media (max-width: 540px) {
-                margin-bottom: 2.2rem;
-                font-size: 2.2rem;
-            }
-        }
-
-        .workflow__item {
-            max-width: 27rem;
-
-            .workflow__subtitle {
-                font-family: "ClashDisplay", sans-serif;
-                font-size: 2rem;
-                color: var(--dark-primary);
-                font-weight: 400;
-                margin-top: 1.6rem;
-
-                @media (max-width: 768px) {
-                    font-size: 1.6rem;
-                }
-            }
-
-            .workflow__text {
-                font-family: "ClashDisplay", sans-serif;
-                font-size: 1.6rem;
-                color: var(--dark-primary);
-                margin-top: 0.8rem;
-
-                @media (max-width: 768px) {
-                    font-size: 1.4rem;
-                }
-            }
-        }
-
-        @media (max-width: 540px) {
-            .workflow__icon {
-                display: flex;
-                justify-content: center;
-            }
-
-            .workflow__subtitle {
-                text-align: center;
-            }
-
-            .workflow__text {
-                text-align: center;
-            }
-        }
+    @include laptop-s {
+      column-gap: 2rem;
     }
+
+    @include tablet-s {
+      column-gap: 2rem;
+    }
+
+    @include mobile-l {
+      padding: 2rem 0;
+    }
+
+    @include mobile-l {
+      grid-template-columns: 1fr;
+      column-gap: 1rem;
+      justify-items: center;
+      row-gap: 2rem;
+    }
+
+    .workflow__item {
+      max-width: 27rem;
+
+      .workflow__subtitle {
+        font-family: "ClashDisplay", sans-serif;
+        font-size: 2rem;
+        color: var(--dark-primary);
+        font-weight: 400;
+        margin-top: 1.6rem;
+
+        @include tablet-s {
+          font-size: 1.6rem;
+        }
+      }
+
+      .workflow__text {
+        font-family: "ClashDisplay", sans-serif;
+        font-size: 1.6rem;
+        color: var(--dark-primary);
+        margin-top: 0.8rem;
+
+        @include tablet-s {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    @include mobile-l {
+      .workflow__icon {
+        display: flex;
+        justify-content: center;
+      }
+
+      .workflow__subtitle {
+        text-align: center;
+      }
+
+      .workflow__text {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include mobile-l {
+  .workflow__title {
+    margin-bottom: 2.2rem;
+    font-size: 2.2rem;
+    text-align: center;
+  }
 }
