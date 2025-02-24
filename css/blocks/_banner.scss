@@ -1,63 +1,67 @@
-.banner {
-  display: flex;
-  color: var(--white);
-  padding: 6rem 0;
+section:nth-child(1) {
+  padding: 0;
 
-  @include mobile-l {
-    padding: 0;
-    padding-bottom: 2rem;
-  }
-
-  .banner__info {
-    background-color: var(--dark-primary);
-    padding: 6rem 6rem;
+  .banner {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    color: var(--white);
+    padding: 6rem 0;
 
     @include mobile-l {
-      padding-left: 2.4rem;
-      padding-right: 2.4rem;
+      padding: 0;
+      padding-bottom: 2rem;
     }
 
-    .banner__title {
-      font-size: 3.2rem;
-      font-weight: normal;
-      line-height: 140%;
-      font-family: "ClashDisplay", sans-serif;
-      margin-bottom: 4.1rem;
+    .banner__info {
+      background-color: var(--dark-primary);
+      padding: 6rem 6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
       @include mobile-l {
-        font-size: 2.6rem;
-        margin-bottom: 8rem;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+      }
+
+      .banner__title {
+        font-size: 3.2rem;
+        font-weight: normal;
+        line-height: 140%;
+        font-family: "ClashDisplay", sans-serif;
+        margin-bottom: 4.1rem;
+
+        @include mobile-l {
+          font-size: 2.6rem;
+          margin-bottom: 8rem;
+        }
+      }
+
+      .banner__description {
+        font-family: "Santoshi";
+        font-size: 1.8rem;
+        line-height: 150%;
+
+        @include mobile-l {
+          font-size: 1.4rem;
+        }
       }
     }
 
-    .banner__description {
-      font-family: "Santoshi";
-      font-size: 1.8rem;
-      line-height: 150%;
-
-      @include mobile-l {
-        font-size: 1.4rem;
-      }
-    }
-  }
-
-  .banner__image {
-    @include laptop-m {
-      width: 100%;
-    }
-    @include tablet-m {
-      display: none;
-    }
-    img {
-      max-width: 52rem;
-      object-fit: cover;
-      height: 100%;
-
-      @include laptop-s {
+    .banner__image {
+      @include laptop-m {
         width: 100%;
+      }
+      @include tablet-m {
+        display: none;
+      }
+      img {
+        max-width: 52rem;
+        object-fit: cover;
+        height: 100%;
+
+        @include laptop-s {
+          width: 100%;
+        }
       }
     }
   }

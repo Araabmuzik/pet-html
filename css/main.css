@@ -17,6 +17,7 @@
   --border-dark: #cac6da;
   --font-color: #726e8d;
   --f-size: 1.4rem;
+  --f-size: 1.6rem;
 }
 
 html {
@@ -100,6 +101,11 @@ body {
   margin-bottom: 5.1rem;
 }
 
+@media (max-width: 1920px) {
+  section {
+    padding: 0 5px;
+  }
+}
 .btn {
   font-family: "Santoshi", sans-serif;
   text-decoration: none;
@@ -250,18 +256,21 @@ header .header__bottom .header__nav-bar .header__nav-item a {
   cursor: pointer;
 }
 
-.banner {
+section:nth-child(1) {
+  padding: 0;
+}
+section:nth-child(1) .banner {
   display: flex;
   color: var(--white);
   padding: 6rem 0;
 }
 @media (max-width: 540px) {
-  .banner {
+  section:nth-child(1) .banner {
     padding: 0;
     padding-bottom: 2rem;
   }
 }
-.banner .banner__info {
+section:nth-child(1) .banner .banner__info {
   background-color: var(--dark-primary);
   padding: 6rem 6rem;
   display: flex;
@@ -269,12 +278,12 @@ header .header__bottom .header__nav-bar .header__nav-item a {
   justify-content: space-between;
 }
 @media (max-width: 540px) {
-  .banner .banner__info {
+  section:nth-child(1) .banner .banner__info {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
   }
 }
-.banner .banner__info .banner__title {
+section:nth-child(1) .banner .banner__info .banner__title {
   font-size: 3.2rem;
   font-weight: normal;
   line-height: 140%;
@@ -282,39 +291,39 @@ header .header__bottom .header__nav-bar .header__nav-item a {
   margin-bottom: 4.1rem;
 }
 @media (max-width: 540px) {
-  .banner .banner__info .banner__title {
+  section:nth-child(1) .banner .banner__info .banner__title {
     font-size: 2.6rem;
     margin-bottom: 8rem;
   }
 }
-.banner .banner__info .banner__description {
+section:nth-child(1) .banner .banner__info .banner__description {
   font-family: "Santoshi";
   font-size: 1.8rem;
   line-height: 150%;
 }
 @media (max-width: 540px) {
-  .banner .banner__info .banner__description {
+  section:nth-child(1) .banner .banner__info .banner__description {
     font-size: 1.4rem;
   }
 }
 @media (max-width: 1280px) {
-  .banner .banner__image {
+  section:nth-child(1) .banner .banner__image {
     width: 100%;
   }
 }
 @media (max-width: 991px) {
-  .banner .banner__image {
+  section:nth-child(1) .banner .banner__image {
     display: none;
   }
 }
-.banner .banner__image img {
+section:nth-child(1) .banner .banner__image img {
   max-width: 52rem;
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
 }
 @media (max-width: 1024px) {
-  .banner .banner__image img {
+  section:nth-child(1) .banner .banner__image img {
     width: 100%;
   }
 }
